@@ -30,7 +30,7 @@ class CustomTokenButton extends Component {
 
         const dob = dateOfBirth.substr(0, 10);
 
-        const result = await axios.post(`http://localhost:4000/routes/generateCustomToken`, { email, firstName, lastName, dateOfBirth:dob, userId });
+        const result = await axios.post(`https://damp-ridge-17926.herokuapp.com/routes/generateCustomToken`, { email, firstName, lastName, dateOfBirth:dob, userId });
         if (result) {
             if(result.data.token) {
                 localStorage.set('jwt-custom-token', result.data.token);

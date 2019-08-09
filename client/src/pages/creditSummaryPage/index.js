@@ -15,8 +15,9 @@ const dateOfBirth="20-12-1999";
 class CreditSummaryPage extends Component {
     constructor(props){
         super(props);
+        const userId = localStorage.get("userId");
         this.state ={
-            userId : localStorage.get("userId"),
+            userId,
             userProfile:{
                 email,
                 firstName,

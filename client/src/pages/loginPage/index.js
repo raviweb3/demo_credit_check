@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import autoBind from "react-autobind";
-import LoginMutation from "./../../containers/LoginMutation";
 import RenderPage from "../../customComponents/Common/RenderPage/RenderPage";
 import {Button, Col, FormGroup, Label, Row} from "reactstrap";
 
