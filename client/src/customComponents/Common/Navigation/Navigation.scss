@@ -1,0 +1,17 @@
+@import "../../../stylesheets/app";
+
+.custom-navbar {
+  min-height: $fs-144px;
+  position: fixed;
+  top: 0;
+  width: 70%;
+  z-index: 99;
+  right: 0;
+  left: 0;
+  @include setMargin(auto, auto , auto, auto);
+}
+.custom-navbar-nav{
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}

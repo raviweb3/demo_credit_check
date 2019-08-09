@@ -1,0 +1,32 @@
+@import "../../../stylesheets/app";
+.strip {
+  position: relative;
+  padding-top: $fs-10px;
+  padding-bottom: $fs-10px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 750px;
+
+  @include xsmall {
+    min-height: 350px;
+  }
+
+  @include phone {
+    min-height: 350px;
+  }
+
+  @include iphone {
+    min-height: 400px;
+  }
+}
+
+.strip--short {
+  position: relative;
+  padding-top: $fs-10px;
+  padding-bottom: $fs-10px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: auto;
+}
