@@ -39,7 +39,8 @@ const redirectRoute = express.Router();
 redirectRoute.route('/redirect').get(function(req, res) {
     let code = req.query.code;
     let state = req.query.state;
-    http.request(`https://api.creditkudos.com/reports/1/income`, { 'Authorization': 'Bearer ' + code }).on('response', (response) => response.pipe(res))
+    res.header( 'Authorization', "Bearer " + code );
+    res.redirect(307, 'https://api.creditkudos.com/reports/1/income');
 });
 
 app.use('/routes', serverRoutes);
