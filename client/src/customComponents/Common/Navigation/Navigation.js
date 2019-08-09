@@ -38,9 +38,6 @@ class Navigation extends Component {
             <NavItem>
               <NavLink href="/login">Login</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/credit-kudos-init">credit-kudos</NavLink>
-            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

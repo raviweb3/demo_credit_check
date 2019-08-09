@@ -5,31 +5,40 @@ import UserProfile from './components/UserProfile';
 
 const localStorage = require('local-storage');
 
+// Constants for Demo
+const email ="betha.ravikiran@gmail.com";
+const firstName="Ravi Kiran";
+const lastName="Betha";
+const dateOfBirth="20-12-1999";
+
+
 class CreditSummaryPage extends Component {
     constructor(props){
         super(props);
         this.state ={
-            userId : localStorage.get("userId")
+            userId : localStorage.get("userId"),
+            userProfile:{
+                email,
+                firstName,
+                lastName,
+                dateOfBirth,
+                userId
+            }
         }
     }
 
+    // TODO @RaviKiran Refer the previous version for Reading the data from Server
+    // User UserProfileData container
     render() {
-        const { userId } = this.state;
+        const {userProfile} = this.state;
         return (
             <div>
                 <p>Welcome to CreditSummary Page</p>
                 <div>
                     <p>Profile Details</p>
-                    <UserProfileData
-                        userId={userId}
-                        render={({userProfile}) => {
-                            return (
-                                <UserProfile
-                                    userProfile={userProfile}
-                                    history={this.props.history}
-                                />
-                            );
-                        }}
+                    <UserProfile
+                        userProfile={userProfile}
+                        history={this.props.history}
                     />
                 </div>
                 <div>
