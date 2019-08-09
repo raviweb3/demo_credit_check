@@ -40,15 +40,16 @@ class UserProfile extends Component {
             className="pt-32px pb-32px"
           >
             <Row>
-              <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                {avatarImage}
+              <Col xs={12} sm={12} md={5} lg={5} xl={5} className="common-border">
+                {/* ${avatarImage} */}
+                Profile image
               </Col>
               <Col
-                xs={6}
-                sm={6}
-                md={6}
-                lg={6}
-                xl={6}
+                xs={12}
+                sm={12}
+                md={{ offset: 1, size: 6 }}
+                lg={{ offset: 1, size: 6 }}
+                xl={{ offset: 1, size: 6 }}
                 className="br-sin-yellow pl-16px pr-16px pt-16px pb-16px"
               >
                 <Row>

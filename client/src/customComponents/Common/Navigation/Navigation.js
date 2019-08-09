@@ -28,7 +28,7 @@ class Navigation extends Component {
   render() {
     return (
         <Navbar color="faded" light expand="md" className="custom-navbar">
-          <NavbarBrand href="/" className="mr-auto">
+          <NavbarBrand href="/" className="mr-auto width-20">
            Logo
           </NavbarBrand>
 

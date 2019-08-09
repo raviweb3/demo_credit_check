@@ -19,12 +19,13 @@ class BannerInformation extends Component {
             md={{ offset: 1, size: 6 }}
             lg={{ offset: 1, size: 6 }}
             xl={{ offset: 1, size: 6 }}
+            className="common-border"
           >
             image will replace
           </Col>
         </Row>
-        <Row>
-          <Col xs={12} sm={12} md={5} lg={5} xl={5} className="pb-32px">
+        <Row className="pb-32px pt-16px">
+          <Col xs={12} sm={12} md={5} lg={5} xl={5}>
             <h4 className="page__sub-title mb-0px padding-1rem">
               Gain access to Instant credit and have a hassel free life...
             </h4>
@@ -35,8 +36,9 @@ class BannerInformation extends Component {
             md={{ offset: 1, size: 6 }}
             lg={{ offset: 1, size: 6 }}
             xl={{ offset: 1, size: 6 }}
+            className="common-border"
           >
-            credit card list
+            card list
           </Col>
         </Row>
       </Strip>

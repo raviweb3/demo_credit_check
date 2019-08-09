@@ -16,7 +16,7 @@ class LogoutPage extends Component {
               md={12}
               lg={12}
               xl={12}
-              className="text-center"
+              className="text-center pt-16px pb-16px"
             >
               <h5 className="mb-0px">
                 You have successfully logged out of Credit Kudos Application
@@ -30,13 +30,11 @@ class LogoutPage extends Component {
               md={12}
               lg={12}
               xl={12}
-              className="text-center"
+              className="text-center pt-32px pb-32px"
             >
-              <Button>
-                <Link className="pull-right" to="/">
-                  Return
-                </Link>
-              </Button>
+              <Link className="pull-right" to="/">
+                <Button>Return</Button>
+              </Link>
             </Col>
           </Row>
         </Strip>
