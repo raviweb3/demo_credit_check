@@ -35,7 +35,7 @@ class LoginPage extends Component {
         <Strip className="strip strip--short ">
           <Row className="mt-32px mb-32px">
             <Col xs={12} sm={12} md={6} lg={6} xl={6} className="pb-32px common-border">
-               credit card list
+               Card list
             </Col>
             <Col
               xs={12}
