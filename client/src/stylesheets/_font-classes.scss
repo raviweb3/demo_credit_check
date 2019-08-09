@@ -183,3 +183,11 @@
 .form__container {
   @include setPadding($fs-32px, $fs-32px, $fs-32px, $fs-32px);
 }
+
+.common-border{
+  border: $fs-2px solid $sin-yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $fs-24px;
+}

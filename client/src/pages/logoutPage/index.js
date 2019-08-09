@@ -32,11 +32,9 @@ class LogoutPage extends Component {
               xl={12}
               className="text-center"
             >
-              <Button>
-                <Link className="pull-right" to="/">
-                  Return
-                </Link>
-              </Button>
+              <Link className="pull-right" to="/">
+                <Button>Return</Button>
+              </Link>
             </Col>
           </Row>
         </Strip>
