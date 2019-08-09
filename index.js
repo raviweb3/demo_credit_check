@@ -3,7 +3,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
-const PORT = 4000;
 
 const creditKudosClient = "626b4603e66d74163d8a5ed0d82d0e5a1e67475fc724ad1d6284440b91369fbc";
 const creditKudosSecret = "50eafdebe848272882cc25fba1d3b664eb3d33664b3356a7f7289d2c53c52ee8";
@@ -40,8 +39,15 @@ serverRoutes.route('/').post(function(req, res) {
 app.use('/routes', serverRoutes);
 app.use('/redirect', redirectRoute);
 
-app.listen(PORT, function() {
-    console.log("Server is running on Port: " + PORT);
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
+
+const port = process.env.PORT || 5000;
+
+app.listen(port, function() {
+    console.log("Server is running on Port: " + port);
 });
 
 
+console.log(`demo credit check listening on ${port}`);
