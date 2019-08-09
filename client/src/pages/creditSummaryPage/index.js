@@ -16,16 +16,21 @@ class CreditSummaryPage extends Component {
     constructor(props){
         super(props);
         const userId = localStorage.get("userId");
+
+        const userProfile ={
+            email,
+            firstName,
+            lastName,
+            dateOfBirth,
+            userId
+        }
+
         this.state ={
             userId,
-            userProfile:{
-                email,
-                firstName,
-                lastName,
-                dateOfBirth,
-                userId
-            }
+            userProfile
         }
+
+        localStorage.set("user-profile",JSON.stringify(userProfile));
     }
 
     // TODO @RaviKiran Refer the previous version for Reading the data from Server
