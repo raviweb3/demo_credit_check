@@ -28,19 +28,22 @@ class Navigation extends Component {
   render() {
     return (
         <Navbar color="faded" light expand="md" className="custom-navbar">
-          <NavbarBrand href="/" className="mr-auto">
-            Demo Credit Check
+          <NavbarBrand href="/" className="mr-auto width-20">
+           Logo
           </NavbarBrand>
 
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar className="custom-navbar-nav">
-              <NavItem>
-                <NavLink href="/login" className="text-decoration">
-                  <h5 className="mb-0px title-butter-scotch">Login</h5>
-                </NavLink>
-              </NavItem>
-            </Nav>
+          <Nav navbar className="custom-navbar-nav">
+            <NavItem>
+              <h3 className="mb-0px page__title title-black openSan-bold">Demo Credit Check</h3>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/login" className="text-decoration">
+                <h5 className="mb-0px title-butter-scotch page__title">Login</h5>
+              </NavLink>
+            </NavItem>
+          </Nav>
           </Collapse>
         </Navbar>
     );

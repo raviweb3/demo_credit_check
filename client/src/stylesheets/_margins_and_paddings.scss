@@ -1,18 +1,23 @@
 @import "fonts";
 
-.margin-1rem{
+.margin-1rem {
   @include setMargin($fs-16px, $fs-16px, $fs-16px, $fs-16px);
 }
-.padding-1rem{
-  @include setPadding($fs-16px, $fs-16px, $fs-16px, $fs-16px);
+.padding-1rem {
+  @include setPadding(
+    $fs-16px !important,
+    $fs-16px !important,
+    $fs-16px !important,
+    $fs-16px !important
+  );
 }
-.margin-2rem{
+.margin-2rem {
   @include setMargin($fs-32px, $fs-32px, $fs-32px, $fs-32px);
 }
-.padding-2rem{
+.padding-2rem {
   @include setPadding($fs-32px, $fs-32px, $fs-32px, $fs-32px);
 }
-.mt-0px{
+.mt-0px {
   margin-top: 0 !important;
 }
 .mt-3px {
@@ -33,13 +38,13 @@
 .mt-16px {
   margin-top: $fs-16px !important;
 }
-.mt-20px{
+.mt-20px {
   margin-top: $fs-20px !important;
 }
 .mt-24px {
   margin-top: $fs-24px !important;
 }
-.mt-30px{
+.mt-30px {
   margin-top: $fs-30px !important;
 }
 .mt-32px {
@@ -63,7 +68,7 @@
 .mt-80px {
   margin-top: $fs-80px !important;
 }
-.mt-90px{
+.mt-90px {
   margin-top: $fs-90px !important;
 }
 .mt-96px {
@@ -72,10 +77,10 @@
 .mt-116px {
   margin-top: $fs-116px !important;
 }
-.mt-128px{
+.mt-128px {
   margin-top: $fs-128px !important;
 }
-.mt-144px{
+.mt-144px {
   margin-top: $fs-144px !important;
 }
 .mb-0px {
@@ -102,13 +107,13 @@
 .mb-16px {
   margin-bottom: $fs-16px !important;
 }
-.mb-20px{
+.mb-20px {
   margin-bottom: $fs-20px !important;
 }
 .mb-24px {
   margin-bottom: $fs-24px !important;
 }
-.mb-30px{
+.mb-30px {
   margin-bottom: $fs-30px !important;
 }
 .mb-32px {
@@ -139,19 +144,19 @@
   margin-bottom: $fs-116px !important;
 }
 
-.ml-auto{
+.ml-auto {
   margin-left: auto !important;
 }
 .ml-0px {
   margin-left: 0 !important;
 }
-.ml-3px{
+.ml-3px {
   margin-left: $fs-3px !important;
 }
-.ml-4px{
+.ml-4px {
   margin-left: $fs-4px !important;
 }
-.ml-5px{
+.ml-5px {
   margin-left: $fs-5px !important;
 }
 .ml-8px {
@@ -188,13 +193,13 @@
 .mr-0px {
   margin-right: 0 !important;
 }
-.mr-3px{
+.mr-3px {
   margin-right: $fs-3px !important;
 }
-.mr-4px{
+.mr-4px {
   margin-right: $fs-4px !important;
 }
-.mr-5px{
+.mr-5px {
   margin-right: $fs-5px !important;
 }
 .mr-8px {
@@ -214,7 +219,7 @@
 
 .mr-16px--no-mobile {
   margin-right: $fs-16px !important;
-  @include mobileScreen{
+  @include mobileScreen {
     margin-right: 0 !important;
   }
 }
@@ -232,16 +237,16 @@
   margin-right: $fs-80px !important;
 }
 
-.pt-0px{
+.pt-0px {
   padding-top: 0 !important;
 }
-.pt-2px{
+.pt-2px {
   padding-top: $fs-2px !important;
 }
 .pt-4px {
   padding-top: $fs-4px !important;
 }
-.pt-6px{
+.pt-6px {
   padding-top: $fs-6px !important;
 }
 .pt-7px {
@@ -253,8 +258,8 @@
 .pt-12px {
   padding-top: $fs-12px !important;
 }
-.pt-12px--mobile{
-  @include mobileScreen{
+.pt-12px--mobile {
+  @include mobileScreen {
     padding-top: $fs-12px !important;
   }
 }
@@ -270,7 +275,7 @@
 .pt-24px {
   padding-top: $fs-24px !important;
 }
-.pt-30px{
+.pt-30px {
   padding-top: $fs-30px !important;
 }
 .pt-32px {
@@ -292,20 +297,19 @@
   padding-top: $fs-80px !important;
 }
 
-
-.pb-0px{
+.pb-0px {
   padding-bottom: 0 !important;
 }
-.pb-1px{
+.pb-1px {
   padding-bottom: $fs-1px !important;
 }
-.pb-2px{
-  padding-bottom: $fs-2px !important; 
+.pb-2px {
+  padding-bottom: $fs-2px !important;
 }
 .pb-4px {
   padding-bottom: $fs-4px !important;
 }
-.pb-6px{
+.pb-6px {
   padding-bottom: $fs-6px !important;
 }
 .pb-7px {
@@ -317,8 +321,8 @@
 .pb-12px {
   padding-bottom: $fs-12px !important;
 }
-.pb-12px--mobile{
-  @include mobileScreen{
+.pb-12px--mobile {
+  @include mobileScreen {
     padding-bottom: $fs-12px !important;
   }
 }
@@ -334,7 +338,7 @@
 .pb-24px {
   padding-bottom: $fs-24px !important;
 }
-.pb-30px{
+.pb-30px {
   padding-bottom: $fs-30px !important;
 }
 .pb-32px {
@@ -355,97 +359,97 @@
 .pb-80px {
   padding-bottom: $fs-80px !important;
 }
-.pb-96px{
+.pb-96px {
   padding-bottom: $fs-96px !important;
 }
 
-.pl-0px{
+.pl-0px {
   padding-left: 0 !important;
 }
-.pl-4px{
+.pl-4px {
   padding-left: $fs-4px !important;
 }
-.pl-6px{
+.pl-6px {
   padding-left: $fs-6px !important;
 }
-.pl-8px{
+.pl-8px {
   padding-left: $fs-8px !important;
 }
-.pl-12px{
+.pl-12px {
   padding-left: $fs-12px !important;
 }
-.pl-16px{
+.pl-16px {
   padding-left: $fs-16px !important;
 }
-.pl-16px--no-mobile{
+.pl-16px--no-mobile {
   padding-left: $fs-16px !important;
-  @include mobileScreen{
+  @include mobileScreen {
     padding-left: 0 !important;
   }
 }
-.pl-20px{
+.pl-20px {
   padding-left: $fs-20px !important;
 }
-.pl-24px{
+.pl-24px {
   padding-left: $fs-24px !important;
 }
-.pl-32px{
+.pl-32px {
   padding-left: $fs-32px !important;
 }
-.pl-36px{
+.pl-36px {
   padding-left: $fs-36px !important;
 }
-.pl-42px{
+.pl-42px {
   padding-left: $fs-42px !important;
 }
-.pl-45px{
+.pl-45px {
   padding-left: $fs-45px !important;
 }
-.pl-48px{
+.pl-48px {
   padding-left: $fs-48px !important;
 }
-.pr-0px{
+.pr-0px {
   padding-right: 0 !important;
 }
-.pr-4px{
+.pr-4px {
   padding-right: $fs-4px !important;
 }
-.pr-6px{
+.pr-6px {
   padding-right: $fs-6px !important;
 }
-.pr-8px{
+.pr-8px {
   padding-right: $fs-8px !important;
 }
-.pr-12px{
+.pr-12px {
   padding-right: $fs-12px !important;
 }
-.pr-16px{
+.pr-16px {
   padding-right: $fs-16px !important;
 }
-.pr-16px--no-mobile{
+.pr-16px--no-mobile {
   padding-right: $fs-16px !important;
-  @include mobileScreen{
+  @include mobileScreen {
     padding-right: 0 !important;
   }
 }
-.pr-20px{
+.pr-20px {
   padding-right: $fs-20px !important;
 }
-.pr-24px{
+.pr-24px {
   padding-right: $fs-24px !important;
 }
-.pr-32px{
+.pr-32px {
   padding-right: $fs-32px !important;
 }
-.pr-36px{
+.pr-36px {
   padding-right: $fs-36px !important;
 }
-.pr-42px{
+.pr-42px {
   padding-right: $fs-42px !important;
 }
-.pr-45px{
+.pr-45px {
   padding-right: $fs-45px !important;
 }
-.pr-48px{
+.pr-48px {
   padding-right: $fs-48px !important;
 }

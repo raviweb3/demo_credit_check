@@ -1,7 +1,7 @@
 @import "../../../stylesheets/app";
 
 .custom-navbar {
-  min-height: $fs-144px;
+  min-height: $fs-112px;
   position: fixed;
   top: 0;
   width: 70%;
@@ -9,6 +9,7 @@
   right: 0;
   left: 0;
   @include setMargin(auto, auto , auto, auto);
+  background-color: #f3f3f3;
 }
 .custom-navbar-nav{
   width: 100%;
