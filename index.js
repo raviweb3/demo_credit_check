@@ -34,7 +34,7 @@ serverRoutes.route('/generateCustomToken').post(function(req, res) {
 const redirectRoute = express.Router();
 serverRoutes.route('/').post(function(req, res) {
     console.log(req);
-    res.json({result:"SUCCESS"});
+    res.json({result:"SUCCESS", data: JSON.stringify(req)});
 });
 
 app.use('/routes', serverRoutes);
