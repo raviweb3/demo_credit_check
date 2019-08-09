@@ -35,7 +35,7 @@ serverRoutes.route('/generateCustomToken').post(function(req, res) {
 });
 
 const redirectRoute = express.Router();
-serverRoutes.route('/').post(function(req, res) {
+serverRoutes.route('/redirect').post(function(req, res) {
     console.log("response came back from Credit Kuds");
     console.log(req.params);
     console.log(req);
@@ -43,7 +43,7 @@ serverRoutes.route('/').post(function(req, res) {
 });
 
 app.use('/routes', serverRoutes);
-app.use('/redirect', redirectRoute);
+app.use('/callbacks', redirectRoute);
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname+'/client/build/index.html'));

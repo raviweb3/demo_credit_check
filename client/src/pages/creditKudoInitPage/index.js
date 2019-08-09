@@ -6,7 +6,7 @@ import myGlobalRefs from './../../globals';
 const localStorage = require('local-storage');
 
 const client_id="626b4603e66d74163d8a5ed0d82d0e5a1e67475fc724ad1d6284440b91369fbc";
-const redirect_uri="https://damp-ridge-17926.herokuapp.com/redirect";
+const redirect_uri="https://damp-ridge-17926.herokuapp.com/callbacks/redirect";
 
 const selector="#credit_kudos_container";
 
