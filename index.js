@@ -37,12 +37,14 @@ serverRoutes.route('/generateCustomToken').post(function(req, res) {
 
 const redirectRoute = express.Router();
 redirectRoute.route('/redirect').get(function(req, res) {
-    const query_string = req.search;
+    console.log(req);
+    console.log(req.url);
+    const query_string = req.url;
     console.log(query_string);
     const search_params = new URLSearchParams(query_string);
     console.log(search_params);
 
-    res.json({result:"SUCCESS", data: "Ravi Kiran"});
+    res.json({result:"SUCCESS", data:{ name: "Ravi Kiran"} });
 });
 
 app.use('/routes', serverRoutes);
