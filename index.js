@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const url = require('url');
 const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -36,10 +37,12 @@ serverRoutes.route('/generateCustomToken').post(function(req, res) {
 
 const redirectRoute = express.Router();
 redirectRoute.route('/redirect').get(function(req, res) {
-    console.log("response came back from Credit Kuds");
-    console.log(req.params);
-    console.log(req);
-    res.json({result:"SUCCESS", data: JSON.stringify(req)});
+    const query_string = req.search;
+    console.log(query_string);
+    const search_params = new URLSearchParams(query_string);
+    console.log(search_params);
+
+    res.json({result:"SUCCESS", data: "Ravi Kiran"});
 });
 
 app.use('/routes', serverRoutes);
