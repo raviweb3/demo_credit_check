@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-import {Button, Col, FormGroup, Label, Row} from "reactstrap";
+import {Button} from "reactstrap";
 import autoBind from "react-autobind";
 import axios from "axios";
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
 import autoBind from "react-autobind";
-import myGlobalRefs from '../../globals';
+import myGlobalRefs from './../../globals';
 
 const localStorage = require('local-storage');
 

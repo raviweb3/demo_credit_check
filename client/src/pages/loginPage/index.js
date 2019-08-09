@@ -1,27 +1,27 @@
-import React, { Component } from 'react';
-import autoBind from 'react-autobind';
-import { Row, Col, FormGroup, Label, Button } from 'reactstrap';
-import LoginMutation from './../../containers/LoginMutation';
+import React, { Component } from "react";
+import autoBind from "react-autobind";
+import LoginMutation from "./../../containers/LoginMutation";
+import RenderPage from "../../customComponents/Common/RenderPage/RenderPage";
 
-const localStorage = require('local-storage');
+const localStorage = require("local-storage");
 
 class LoginPage extends Component {
-    constructor(props) {
-        super(props);
-        autoBind(this);
-    }
+  constructor(props) {
+    super(props);
+    autoBind(this);
+  }
 
-    onSuccessfulLogin(data){
-        this.props.history.push("/credit-summary");
-    }
+  onSuccessfulLogin(data) {
+    this.props.history.push("/credit-summary");
+  }
 
-    render() {
-        return (
-            <div>
-                <LoginMutation callBack={this.onSuccessfulLogin} />
-            </div>
-        )
-    }
+  render() {
+    return (
+      <RenderPage className="render-page" containerType="container">
+        <LoginMutation callBack={this.onSuccessfulLogin} />
+      </RenderPage>
+    );
+  }
 }
 
 export default LoginPage;
