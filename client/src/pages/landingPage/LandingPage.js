@@ -8,10 +8,10 @@ class LandingPage extends Component {
   render() {
     return (
       <RenderPage className="render-page" containerType="container">
-        <Strip className="strip">
-          <Row>
-            <Col xs={12} sm={12} md={12} xl={12} lg={12}>
-              <h4> Interested in instant credit for your day today activities?</h4>
+        <Strip className="strip strip--short ">
+          <Row className="bg-sin-yellow">
+            <Col xs={12} sm={12} md={12} xl={12} lg={12} className="pb-48px pt-48px text-center">
+              <h4 className="mb-0px page__title"> Interested in instant credit for your day today activities?</h4>
             </Col>
           </Row>
         </Strip>
