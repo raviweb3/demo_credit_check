@@ -39,8 +39,9 @@ const redirectRoute = express.Router();
 redirectRoute.route('/redirect').get(function(req, res) {
     let code = req.query.code;
     let state = req.query.state;
-    res.header( 'Authorization', "Bearer " + state );
-    res.redirect(307, 'https://api.creditkudos.com/reports/1/income');
+    res.header( 'Content-Type', "application/json" );
+    res.header( 'Authorization', "Bearer " + code );
+    res.redirect(307, 'https://api.creditkudos.com/v3/reports/1/summary_pdf_requests');
 });
 
 app.use('/routes', serverRoutes);
