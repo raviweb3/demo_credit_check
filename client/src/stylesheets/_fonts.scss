@@ -1,36 +1,36 @@
 // Fonts used in the Project
-/*@font-face {
+@font-face {
   font-family: "OpenSans-Light";
-  src: url("../../public/fonts/OpenSans-Light.ttf");
+  src: url("../fonts/OpenSans-Light.ttf");
 }
 
 @font-face {
   font-family: "OpenSans-Bold";
-  src: url("../../public/fonts/OpenSans-Bold.ttf");
+  src: url("../fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url("../../public/fonts/OpenSans-Regular.ttf");
+  src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "Avenir-Book";
-  src: url("../../public/fonts/Avenir-Book.ttf");
+  src: url("../fonts/Avenir-Book.ttf");
 }
 
 @font-face {
   font-family: "Avenir-Heavy";
-  src: url("../../public/fonts/Avenir-Heavy.ttf");
+  src: url("../fonts/Avenir-Heavy.ttf");
 }
 @font-face {
   font-family: "Avenir-Light";
-  src: url("../../public/fonts/Avenir-Light.ttf");
+  src: url("../fonts/Avenir-Light.ttf");
 }
 
 @font-face {
   font-family: "Avenir-Medium";
-  src: url("../../public/fonts/Avenir-Medium.ttf");
+  src: url("../fonts/Avenir-Medium.ttf");
 }
 
 $openSan-bold:OpenSans-Bold;
@@ -39,7 +39,7 @@ $openSan-regular:OpenSans-Regular;
 $avenir-book: Avenir-Book;
 $avenir-heavy: Avenir-Heavy;
 $avenir-light: Avenir-Light;
-$avenir-medium: Avenir-Medium;*/
+$avenir-medium: Avenir-Medium;
 
 // Based on requirements, clean up the sizes that are not necessary.
 $fs-1px: 0.06rem; //	1px
