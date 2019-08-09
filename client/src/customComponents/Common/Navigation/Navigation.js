@@ -27,21 +27,22 @@ class Navigation extends Component {
   }
   render() {
     return (
-    <Container>
-      <Navbar color="faded" light expand="md">
-        <NavbarBrand href="/" className="mr-auto">
-          Credit Kudos Dashboard
-        </NavbarBrand>
-        <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-        <Collapse isOpen={!this.state.collapsed} navbar>
-          <Nav navbar>
-            <NavItem>
-              <NavLink href="/login">Login</NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-      </Container>
+        <Navbar color="faded" light expand="md" className="custom-navbar">
+          <NavbarBrand href="/" className="mr-auto">
+            Demo Credit Check
+          </NavbarBrand>
+
+          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+          <Collapse isOpen={!this.state.collapsed} navbar>
+            <Nav navbar className="custom-navbar-nav">
+              <NavItem>
+                <NavLink href="/login" className="text-decoration">
+                  <h5 className="mb-0px title-butter-scotch">Login</h5>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
     );
   }
 }
