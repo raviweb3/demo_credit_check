@@ -121,3 +121,11 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+
+.credit-kudo__instruction {
+  list-style-position: inside;
+  font-size: $fs-24px;
+  line-height: 2.5rem;
+  @include setPadding($fs-16px, $fs-32px, $fs-16px, $fs-32px);
+  @include setMargin(0, 0, 0, 0);
+}

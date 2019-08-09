@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import {Button} from "reactstrap";
+import { Button, Row, Col } from "reactstrap";
 import autoBind from "react-autobind";
 import axios from "axios";
 
@@ -42,9 +42,17 @@ class CustomTokenButton extends Component {
     render(){
         const { isEnabled } = this.state;
         return (
-            <div>
-                <Button disabled={!isEnabled} id="tst-gen-custom-token" onClick={this.handleClick}>New Auth</Button>
-            </div>
+            <Row className="mt-32px mb-32px">
+                <Col xs={12} sm={12} md={12} lg={12} xl={12} className="text-center">
+                    <Button
+                        disabled={!isEnabled}
+                        id="tst-gen-custom-token"
+                        onClick={this.handleClick}
+                    >
+                        Continue
+                    </Button>
+                </Col>
+            </Row>
         )
     }
 }

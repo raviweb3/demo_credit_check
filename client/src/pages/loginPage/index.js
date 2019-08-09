@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import autoBind from "react-autobind";
-import RenderPage from "../../customComponents/Common/RenderPage/RenderPage";
 import {Button, Col, FormGroup, Label, Row} from "reactstrap";
+import RenderPage from "../../customComponents/Common/RenderPage/RenderPage";
+import Strip from "../../customComponents/Common/Strip/Strip";
 
 const localStorage = require("local-storage");
 
@@ -21,6 +22,33 @@ class LoginPage extends Component {
   render() {
     return (
       <RenderPage className="render-page" containerType="container">
+        <Strip className="strip strip--short ">
+          <Row>
+            <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+              <h3 className="mb-0px">
+                Some text to encourage the user to come forward and login and
+                grant access to Karma.......
+              </h3>
+            </Col>
+          </Row>
+        </Strip>
+        <Strip className="strip strip--short ">
+          <Row className="mt-32px mb-32px">
+            <Col xs={12} sm={12} md={6} lg={6} xl={6} className="pb-32px">
+              credit card list
+            </Col>
+            <Col
+                xs={12}
+                sm={12}
+                md={{ offset: 1, size: 5 }}
+                lg={{ offset: 1, size: 5 }}
+                xl={{ offset: 1, size: 5 }}
+            >
+
+            </Col>
+          </Row>
+        </Strip>
+        <Strip className="strip strip--short ">
         <div>
           <div>
             <div className="Login">
@@ -63,6 +91,7 @@ class LoginPage extends Component {
             </div>
           </div>
         </div>
+        </Strip>
       </RenderPage>
     );
   }

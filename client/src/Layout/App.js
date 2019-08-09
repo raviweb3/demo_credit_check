@@ -17,6 +17,7 @@ import './App.scss';
 
 import apolloClient from '../getClient';
 import Navigation from '../customComponents/Common/Navigation/Navigation';
+import Footer from '../customComponents/Common/Footer/Footer';
 
 // We get hold of Credit Kudos API Reference in Global level and use it.
 myGlobalRefs.myCreditKudos = window.CK;
@@ -36,6 +37,7 @@ class App extends Component {
           <Route path="/redirect-url" component={RedirectPage} />
           </div>
         </Router>
+        <Footer/>
         </ApolloProvider>
     );
   }

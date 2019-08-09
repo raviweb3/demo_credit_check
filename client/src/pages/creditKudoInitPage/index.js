@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
-import {Link} from "react-router-dom";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { Row, Col } from "reactstrap";
 import autoBind from "react-autobind";
-import myGlobalRefs from './../../globals';
+import myGlobalRefs from "./../../globals";
+import RenderPage from "../../customComponents/Common/RenderPage/RenderPage";
+import Strip from "../../customComponents/Common/Strip/Strip";
 
 const localStorage = require('local-storage');
 
@@ -43,11 +46,58 @@ class CreditKudosInitPage extends Component {
 
     render() {
         return (
-            <div>
-                <p>Credit Kudos!!</p>
-                <div id="credit_kudos_container"></div>
-                <Link className="pull-right" to="/logout">Logout</Link>
-            </div>
+            <RenderPage className="render-page bg-white" containerType="container">
+                <Strip className="strip strip--short ">
+                    <Row>
+                        <Col
+                            xs={12}
+                            sm={12}
+                            md={12}
+                            lg={12}
+                            xl={12}
+                            className="text-center"
+                        >
+                            <h3 className="mb-0px">Instruction</h3>
+                        </Col>
+                    </Row>
+                    <Row className="mt-32px mb-32px">
+                        <Col
+                            xs={12}
+                            sm={12}
+                            md={12}
+                            lg={12}
+                            xl={12}
+                            className="br-sin-yellow"
+                        >
+                            <ul className="credit-kudo__instruction">
+                                <li>
+                                    You will be redirected to bank website for Authorization
+                                </li>
+                                <li>
+                                    You will be prompted with the list of Banks to select from.
+                                </li>
+                                <li>Select the bank of your salary account</li>
+                                <li>Dont exit in the middle</li>
+                            </ul>
+                        </Col>
+                    </Row>
+                    <Row className="mt-16px mb-16px">
+                        <Col
+                            xs={12}
+                            sm={12}
+                            md={12}
+                            lg={12}
+                            xl={12}
+                            className="text-center"
+                        >
+                            <div id="credit_kudos_container" />
+                        </Col>
+                    </Row>
+                    <Link className="pull-right" to="/logout">
+                        Logout
+                    </Link>
+                </Strip>
+            </RenderPage>
         )
     }
 }
