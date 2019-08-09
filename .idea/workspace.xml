@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb7d9bc2-cd71-4ead-9243-265c14d5d39e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/customComponents/Common/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/customComponents/Common/Navigation/Navigation.js" afterDir="false" />
+    <list default="true" id="eb7d9bc2-cd71-4ead-9243-265c14d5d39e" name="Default Changelist" comment="bringing changes from sai">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/client/src/customComponents/Common/Navigation/Navigation.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -36,11 +37,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/customComponents/Common/RenderPage/RenderPage.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="15">
+                <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -86,6 +99,7 @@
         <option value="$PROJECT_DIR$/client/src/customComponents/Common/Navigation/Navigation.scss" />
         <option value="$PROJECT_DIR$/client/src/customComponents/Common/customComponents.scss" />
         <option value="$PROJECT_DIR$/client/src/customComponents/Common/Navigation/Navigation.js" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -108,134 +122,6 @@
             <path>
               <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginMutation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="UserProfileData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="customComponents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="customComponents" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="customComponents" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="Footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="customComponents" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="customComponents" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="RenderPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="customComponents" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="Strip" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="graphQL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="creditKudoInitPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo_credit_check" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_credit_check" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="creditSummaryPage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565327931670</updated>
-      <workItem from="1565327932901" duration="19337000" />
+      <workItem from="1565327932901" duration="20601000" />
     </task>
     <task id="LOCAL-00001" summary="bringing changes from sai">
       <created>1565348830994</created>
@@ -294,7 +180,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19337000" />
+    <option name="totallyTimeSpent" value="20601000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -307,15 +193,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23853712" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" weight="0.3291536" />
-      <window_info anchor="bottom" id="Version Control" sideWeight="0.49945414" visible="true" weight="0.26436782" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49945414" weight="0.4336468" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50054586" side_tool="true" visible="true" weight="0.26436782" />
+      <window_info anchor="bottom" id="Version Control" sideWeight="0.49945414" weight="0.26436782" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.4989083" visible="true" weight="0.4336468" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.5010917" side_tool="true" visible="true" weight="0.4336468" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -576,7 +461,7 @@
     <entry file="file://$PROJECT_DIR$/client/src/customComponents/Common/Navigation/Navigation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -592,8 +477,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/customComponents/Common/RenderPage/RenderPage.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
