@@ -23,17 +23,17 @@ class LogoutPage extends Component {
               </h5>
             </Col>
           </Row>
-          <Row>
+          <Row className="justify-content-center">
             <Col
-              xs={12}
-              sm={12}
-              md={12}
-              lg={12}
-              xl={12}
+              xs={8}
+              sm={8}
+              md={4}
+              lg={2}
+              xl={2}
               className="text-center pt-32px pb-32px"
             >
               <Link className="pull-right" to="/">
-                <Button>Return</Button>
+                <Button className="custom-btn-sin-yellow btn-block">Return</Button>
               </Link>
             </Col>
           </Row>

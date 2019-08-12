@@ -1,0 +1,43 @@
+@import "colors";
+@import "mixins";
+@import "fonts";
+
+.custom-btn {
+  background-color: $bright-turquoise;
+  color: $black;
+  font-size: $fs-20px;
+  @include setFont(500, normal, normal, normal, center);
+  font-family: $openSan-regular;
+
+  &:hover {
+    background-color: $bright-turquoise !important;
+    color: $black !important;
+  }
+  &:focus {
+    background-color: $bright-turquoise !important;
+    color: $black !important;
+    box-shadow: none !important;
+  }
+}
+
+.custom-btn-sin-yellow {
+  background-color: $sin-yellow;
+  color: $white;
+  font-size: $fs-20px;
+  border-radius: 0 !important;
+  @include setFont(500, normal, normal, normal, center);
+  @include setPadding($fs-12px, $fs-12px, $fs-12px, $fs-12px);
+  font-family: $openSan-regular;
+  border-color: $sin-yellow;
+  &:hover {
+    background-color: $sin-yellow !important;
+    color: $white !important;
+    border-color: $sin-yellow;
+  }
+  &:focus {
+    background-color: $sin-yellow !important;
+    color: $white !important;
+    box-shadow: none !important;
+    border-color: $sin-yellow;
+  }
+}

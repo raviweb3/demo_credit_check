@@ -40,9 +40,12 @@ class UserProfile extends Component {
             className="pt-32px pb-32px"
           >
             <Row>
-              <Col xs={12} sm={12} md={5} lg={5} xl={5} className="common-border">
-                {/* ${avatarImage} */}
-                Profile image
+              <Col xs={12} sm={12} md={5} lg={5} xl={5} className="bg-white-smoke">
+               <Row className="justify-content-center">
+                 <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+                  <img src={require('../../../../image/john.jpg')}/>
+                 </Col>
+               </Row>
               </Col>
               <Col
                 xs={12}
@@ -53,35 +56,35 @@ class UserProfile extends Component {
                 className="br-sin-yellow pl-16px pr-16px pt-16px pb-16px"
               >
                 <Row>
-                  <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                    <p className="mb-0px">First Name</p>
+                  <Col xs={6} sm={6} md={4} lg={4} xl={4} className="pt-8px pb-8px">
+                    <p className="page__title mb-0px title-dark-grey text-left">First Name</p>
                   </Col>
-                  <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                    <p className="mb-0px">{firstName}</p>
+                  <Col xs={6} sm={6} md={8} lg={8} xl={8} className="pt-8px pb-8px">
+                    <h6 className="page__title mb-0px title-black text-left">{firstName}</h6>
                   </Col>
-                  <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                    <p className="mb-0px">Last Name</p>
+                  <Col xs={6} sm={6} md={4} lg={4} xl={4} className="pt-8px pb-8px">
+                    <p className="page__title mb-0px title-dark-grey text-left">Last Name</p>
                   </Col>
-                  <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                    <p className="mb-0px">{lastName}</p>
+                  <Col xs={6} sm={6} md={8} lg={8} xl={8} className="pt-8px pb-8px">
+                    <h6 className="page__title mb-0px title-black text-left">{lastName}</h6>
                   </Col>
-                  <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                    <p className="mb-0px">Date Of Birth</p>
+                  <Col xs={6} sm={6} md={4} lg={4} xl={4} className="pt-8px pb-8px">
+                    <p className="page__title mb-0px title-dark-grey text-left">Date Of Birth</p>
                   </Col>
-                  <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                    <p className="mb-0px">{dateOfBirth}</p>
+                  <Col xs={6} sm={6} md={8} lg={8} xl={8} className="pt-8px pb-8px">
+                    <h6 className="page__title mb-0px title-black text-left">{dateOfBirth}</h6>
                   </Col>
-                  <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                    <p className="mb-0px">Email</p>
+                  <Col xs={6} sm={6} md={4} lg={4} xl={4} className="pt-8px pb-8px">
+                    <p className="page__title mb-0px title-dark-grey text-left">Email</p>
                   </Col>
-                  <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                    <p className="mb-0px">{email}</p>
+                  <Col xs={6} sm={6} md={8} lg={8} xl={8} className="pt-8px pb-8px">
+                    <h6 className="page__title mb-0px title-black text-left">{email}</h6>
                   </Col>
-                  <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                    <p className="mb-0px">Phone</p>
+                  <Col xs={6} sm={6} md={4} lg={4} xl={4} className="pt-8px pb-8px">
+                    <p className="page__title mb-0px title-dark-grey text-left">Phone</p>
                   </Col>
-                  <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                    <p className="mb-0px">{phone}</p>
+                  <Col xs={6} sm={6} md={8} lg={8} xl={8} className="pt-8px pb-8px">
+                    <h6 className="page__title mb-0px title-black text-left">{phone}</h6>
                   </Col>
                 </Row>
               </Col>
