@@ -160,3 +160,16 @@ img {
   box-shadow: none !important;
   border-color: $sin-yellow !important;
 }
+
+::-webkit-scrollbar {
+  width: $fs-6px;
+  background-color:$sin-yellow;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $cream-brulee-yellow;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 $fs-6px $sin-yellow !important;
+  box-shadow: inset 0 0 $fs-6px $sin-yellow !important;
+  background-color: $sin-yellow;
+}
