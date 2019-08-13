@@ -84,7 +84,7 @@ class CreditKudosInitPage extends Component {
               </ul>
             </Col>
           </Row>
-          <Row className="mt-16px mb-16px">
+          <Row className="pt-32px pb-32px">
             <Col
               xs={12}
               sm={12}
