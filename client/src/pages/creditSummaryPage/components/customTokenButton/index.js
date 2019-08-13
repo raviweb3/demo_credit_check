@@ -42,12 +42,13 @@ class CustomTokenButton extends Component {
     render(){
         const { isEnabled } = this.state;
         return (
-            <Row className="mt-32px mb-32px">
-                <Col xs={12} sm={12} md={12} lg={12} xl={12} className="text-center">
+            <Row className="mt-32px mb-32px justify-content-center">
+                <Col xs={12} sm={12} md={3} lg={2} xl={2} className="text-center">
                     <Button
                         disabled={!isEnabled}
                         id="tst-gen-custom-token"
                         onClick={this.handleClick}
+                        className="custom-btn-sin-yellow btn-block"
                     >
                         Continue
                     </Button>

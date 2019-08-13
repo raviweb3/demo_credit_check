@@ -7,9 +7,9 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Container
+  Image
 } from "reactstrap";
-
+import {logo}  from '../../../image/logo.png'
 class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +29,10 @@ class Navigation extends Component {
     return (
         <Navbar color="faded" light expand="md" className="custom-navbar">
           <NavbarBrand href="/" className="mr-auto width-20">
-           Logo
+          <div className="text-center">
+             <img src={require('../../../image/logo.png')} className="logo-container"/>
+             <h5 className="mb-0px page__title title-black">Demo</h5>
+            </div>
           </NavbarBrand>
 
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />

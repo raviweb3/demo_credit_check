@@ -3,6 +3,7 @@ import autoBind from "react-autobind";
 import { Button, Col, FormGroup, Form, Row, Input } from "reactstrap";
 import RenderPage from "../../customComponents/Common/RenderPage/RenderPage";
 import Strip from "../../customComponents/Common/Strip/Strip";
+import CardList from "../../customComponents/Common/CardList/CardList";
 
 const localStorage = require("local-storage");
 
@@ -34,8 +35,8 @@ class LoginPage extends Component {
         </Strip>
         <Strip className="strip strip--short ">
           <Row className="mt-32px mb-32px">
-            <Col xs={12} sm={12} md={6} lg={6} xl={6} className="pb-32px common-border">
-               Card list
+            <Col xs={12} sm={12} md={6} lg={6} xl={6} className="bg-white-smoke pt-32px pb-32px pl-32px pr-32px pb-32px">
+               <CardList/>
             </Col>
             <Col
               xs={12}
@@ -88,16 +89,25 @@ class LoginPage extends Component {
                       />
                     </FormGroup>
                     <Row>
+                      <Col className="pt-16px pb-16px">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1"/>
+                        <label class="custom-control-label input-label" for="customCheck1">
+                        <p className="mb-0px page__title title-black">Terms and conditions</p></label>
+                      </div>
+                      </Col>
+                    </Row>
+                    <Row className="justify-content-center">
                       <Col
-                        xs={12}
-                        sm={12}
-                        md={12}
-                        lg={12}
-                        xl={12}
+                        xs={5}
+                        sm={5}
+                        md={5}
+                        lg={5}
+                        xl={5}
                         className="text-center"
                       >
-                        <Button type="submit" id="tst-login-btn">
-                          Log In
+                        <Button type="submit" id="tst-login-btn" className="btn-block custom-btn">
+                         Submit
                         </Button>
                       </Col>
                     </Row>

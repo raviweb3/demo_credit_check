@@ -4,6 +4,7 @@
 @import "screen-sizes";
 @import "mixins";
 @import "fonts";
+@import "colors";
 
 :root {
   font-size: $fs-16px; // 16px standard size
@@ -130,6 +131,45 @@ select:-webkit-autofill:focus {
   @include setMargin(0, 0, 0, 0);
 }
 
-.width-20{
+.width-20 {
   width: 20%;
+}
+img {
+  width: 100%;
+}
+
+.custom-control-label {
+  &:before {
+    top: 0.15rem !important;
+    border-radius: 0 !important;
+    border-color: $sin-yellow;
+  }
+  &::after {
+    top: 0.15rem !important;
+    border-color: $sin-yellow;
+  }
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: $sin-yellow;
+  background-color: $sin-yellow;
+  border-color: $sin-yellow;
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none !important;
+  border-color: $sin-yellow !important;
+}
+
+::-webkit-scrollbar {
+  width: $fs-6px;
+  background-color:$sin-yellow;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $cream-brulee-yellow;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 $fs-6px $sin-yellow !important;
+  box-shadow: inset 0 0 $fs-6px $sin-yellow !important;
+  background-color: $sin-yellow;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 import Strip from "../../../../customComponents/Common/Strip/Strip";
+import CardList from "../../../../customComponents/Common/CardList/CardList";
 
 class BannerInformation extends Component {
   render() {
@@ -19,9 +20,9 @@ class BannerInformation extends Component {
             md={{ offset: 1, size: 6 }}
             lg={{ offset: 1, size: 6 }}
             xl={{ offset: 1, size: 6 }}
-            className="common-border"
+           
           >
-            image will replace
+             <img src={require('../../../../image/charts.jpg')} className=""/>
           </Col>
         </Row>
         <Row className="pb-32px pt-16px">
@@ -36,9 +37,9 @@ class BannerInformation extends Component {
             md={{ offset: 1, size: 6 }}
             lg={{ offset: 1, size: 6 }}
             xl={{ offset: 1, size: 6 }}
-            className="common-border"
+           
           >
-            card list
+           <CardList/>
           </Col>
         </Row>
       </Strip>
