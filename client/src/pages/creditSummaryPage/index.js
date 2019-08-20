@@ -64,7 +64,7 @@ class CreditSummaryPage extends Component {
         </Strip>
         <Strip className="strip strip--short">
         <Row>
-          <Col xs={11} sm={11} md={11} lg={11} xl={11} className="m-auto pt-32px pb-32px">
+          <Col xs={11} sm={11} md={11} lg={11} xl={11} className="m-auto pt-30px pb-30px">
             <CardList />
           </Col>
         </Row>

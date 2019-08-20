@@ -14,11 +14,11 @@
     margin: auto;
     padding: 0;
   }
-  .landing-page__container{
+  .landing-page__container {
     height: 100vh;
-    align-items: center
+    align-items: center;
   }
-  .logo{
+  .logo {
     width: 80%;
   }
   .landing-page__tittle {
@@ -28,8 +28,8 @@
     @include setPadding(0, 0, 0, 0);
     @include setFont(500, normal, normal, $fs-22px, center);
   }
-  
-  .landing-page__description{
+
+  .landing-page__description {
     font-family: $montserrat-semiBold;
     color: $white;
     @include setMargin(0, 0, 0, 0);
@@ -38,24 +38,23 @@
     text-transform: uppercase;
     line-height: $fs-30px !important;
   }
-  .login-btn__container{
+  .login-btn__container {
     position: absolute;
     right: 0;
     left: 0;
     bottom: 5rem;
     text-align: right;
-
   }
 }
 
-.min-height-75{
+.min-height-75 {
   height: 75vh !important;
 }
 
-.width-80{
+.width-80 {
   width: 80%;
 }
-.width-60{
+.width-60 {
   width: 60%;
 }
 
@@ -67,29 +66,40 @@
   @include setFont(500, normal, normal, normal, left);
 }
 
-.header-logo{
+.credit-kudo__instruction {
+  font-family: $roboto-light !important;
+  color: $black;
+  list-style-position: inside;
+  font-size: $fs-18px !important;
+  line-height: 2rem;
+  @include setPadding($fs-16px, $fs-32px, $fs-16px, $fs-32px);
+  @include setMargin(0, 0, 0, 0);
+  @include setFont(500, normal, normal, normal, left);
+}
+
+.header-logo {
   width: 6%;
 }
 
-.br-bottom{
+.br-bottom {
   border-bottom: $fs-2px solid rgba(0, 0, 0, 0.3);
 }
-.montserrat-bold{
+.montserrat-bold {
   font-family: $montserrat-bold !important;
-};
-.roboto-light{
+}
+.roboto-light {
   font-family: $roboto-light !important;
 }
 
-.ls-normal{
+.ls-normal {
   letter-spacing: normal !important;
 }
-.title-white{
+.title-white {
   color: $white !important;
 }
-.title-nobel-grey{
- color: $nobel-grey !important;
+.title-nobel-grey {
+  color: $nobel-grey !important;
 }
-.bg-white{
+.bg-white {
   background-color: $white;
 }
