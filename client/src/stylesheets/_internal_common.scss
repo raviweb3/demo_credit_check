@@ -1,0 +1,105 @@
+.bg-img__container {
+  background-image: url("../../src/image/bg-image.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  .bg-layer {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+  }
+  .landing-page__container {
+    height: 100vh;
+    align-items: center;
+  }
+  .logo {
+    width: 80%;
+  }
+  .landing-page__tittle {
+    font-family: $roboto-medium;
+    color: $white;
+    @include setMargin(0, 0, 0, 0);
+    @include setPadding(0, 0, 0, 0);
+    @include setFont(500, normal, normal, $fs-22px, center);
+  }
+
+  .landing-page__description {
+    font-family: $montserrat-semiBold;
+    color: $white;
+    @include setMargin(0, 0, 0, 0);
+    @include setPadding(0, 0, 0, 0);
+    @include setFont(500, normal, normal, $fs-5px, center);
+    text-transform: uppercase;
+    line-height: $fs-30px !important;
+  }
+  .login-btn__container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 5rem;
+    text-align: right;
+  }
+}
+
+.min-height-75 {
+  height: 75vh !important;
+}
+
+.width-80 {
+  width: 80%;
+}
+.width-60 {
+  width: 60%;
+}
+
+.internal-section__tittle {
+  font-family: $roboto-medium;
+  color: $black;
+  @include setMargin(0, 0, 0, 0);
+  @include setPadding(0, 0, 0, 0);
+  @include setFont(500, normal, normal, normal, left);
+}
+
+.credit-kudo__instruction {
+  font-family: $roboto-light !important;
+  color: $black;
+  list-style-position: inside;
+  font-size: $fs-18px !important;
+  line-height: 2rem;
+  @include setPadding($fs-16px, $fs-32px, $fs-16px, $fs-32px);
+  @include setMargin(0, 0, 0, 0);
+  @include setFont(500, normal, normal, normal, left);
+}
+
+.header-logo {
+  width: 6%;
+}
+
+.br-bottom {
+  border-bottom: $fs-2px solid rgba(0, 0, 0, 0.3);
+}
+.montserrat-bold {
+  font-family: $montserrat-bold !important;
+}
+.roboto-light {
+  font-family: $roboto-light !important;
+}
+
+.ls-normal {
+  letter-spacing: normal !important;
+}
+.title-white {
+  color: $white !important;
+}
+.title-nobel-grey {
+  color: $nobel-grey !important;
+}
+.bg-white {
+  background-color: $white;
+}

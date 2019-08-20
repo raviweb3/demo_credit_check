@@ -123,14 +123,6 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-.credit-kudo__instruction {
-  list-style-position: inside;
-  font-size: $fs-24px;
-  line-height: 2.5rem;
-  @include setPadding($fs-16px, $fs-32px, $fs-16px, $fs-32px);
-  @include setMargin(0, 0, 0, 0);
-}
-
 .width-20 {
   width: 20%;
 }
@@ -143,10 +135,17 @@ img {
     top: 0.15rem !important;
     border-radius: 0 !important;
     border-color: $sin-yellow;
+    width: $fs-14px !important;
+    height: $fs-14px !important;
+    height: $fs-14px !important;
+    left: -1.15rem !important;
   }
   &::after {
     top: 0.15rem !important;
     border-color: $sin-yellow;
+    width: $fs-14px !important;
+    height: $fs-14px !important;
+    left: -1.15rem !important;
   }
 }
 
@@ -173,3 +172,4 @@ img {
   box-shadow: inset 0 0 $fs-6px $sin-yellow !important;
   background-color: $sin-yellow;
 }
+

@@ -3,7 +3,8 @@ import autoBind from "react-autobind";
 import { Button, Col, FormGroup, Form, Row, Input } from "reactstrap";
 import RenderPage from "../../customComponents/Common/RenderPage/RenderPage";
 import Strip from "../../customComponents/Common/Strip/Strip";
-import CardList from "../../customComponents/Common/CardList/CardList";
+import LoginBanner from "./LoginBanner";
+import Navigation from "../../customComponents/Common/Navigation/Navigation";
 
 const localStorage = require("local-storage");
 
@@ -22,101 +23,125 @@ class LoginPage extends Component {
   // TODO @RaviKiran Should use Login Mutation instead
   render() {
     return (
-      <RenderPage className="render-page" containerType="container">
-        <Strip className="strip strip--short ">
+      <RenderPage
+        className="render-page bg-img__container min-height-75"
+        containerType="container-fulid"
+      >
+        <Strip className="strip strip--short bg-layer min-height-75">
+          <Navigation />
           <Row>
-            <Col xs={12} sm={12} md={12} lg={12} xl={12} className="pt-32px pb-32px">
-              <h4 className="page__title mb-0px title-black text-left">
-                Some text to encourage the user to come forward and login and
-                grant access to Karma.......
-              </h4>
-            </Col>
-          </Row>
-        </Strip>
-        <Strip className="strip strip--short ">
-          <Row className="mt-32px mb-32px">
-            <Col xs={12} sm={12} md={6} lg={6} xl={6} className="bg-white-smoke pt-32px pb-32px pl-32px pr-32px pb-32px">
-               <CardList/>
-            </Col>
-            <Col
-              xs={12}
-              sm={12}
-              md={{ offset: 1, size: 5 }}
-              lg={{ offset: 1, size: 5 }}
-              xl={{ offset: 1, size: 5 }}
-            >
+            <Col xs={10} sm={10} md={10} lg={10} xl={10} className="m-auto">
               <Row>
                 <Col
-                  xs={12}
-                  sm={12}
-                  md={12}
-                  lg={12}
-                  xl={12}
-                  className="pt-16px pb-16px bg-sin-yellow text-center"
+                  xs={8}
+                  sm={8}
+                  md={6}
+                  lg={4}
+                  xl={4}
+                  className="pt-16px pb-16px"
                 >
-                  <h4 className="mb-0px page__title">Login</h4>
+                  <p className="mb-0 p-large landing-page__description montserrat-bold ls-normal text-left">
+                    Interested in instant credit for <br />
+                    <font className="pl-16px">day today activities?</font>
+                  </p>
                 </Col>
-                <Col
-                  xs={12}
-                  sm={12}
-                  md={12}
-                  lg={12}
-                  xl={12}
-                  className="mt-24px bg-white-smoke"
-                >
-                  <Form
-                     ref={form => (this.form = form)}
-                     onSubmit={event => {
-                       event.preventDefault();
-                       this.signIn();
-                    }}
-                    className="form__container"
-                  >
-                    <FormGroup>
-                      <Input
-                        type="phone"
-                        name="phoneNumber"
-                        className="form-control common-input"
-                        onChange={this.handlePhoneChange}
-                      />
-                    </FormGroup>
-                    <FormGroup>
-                      <Input
-                        type="password"
-                        name="password"
-                        className="form-control common-input"
-                        onChange={this.handlePwdChange}
-                      />
-                    </FormGroup>
-                    <Row>
-                      <Col className="pt-16px pb-16px">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1"/>
-                        <label class="custom-control-label input-label" for="customCheck1">
-                        <p className="mb-0px page__title title-black">Terms and conditions</p></label>
-                      </div>
-                      </Col>
-                    </Row>
-                    <Row className="justify-content-center">
-                      <Col
-                        xs={5}
-                        sm={5}
-                        md={5}
-                        lg={5}
-                        xl={5}
-                        className="text-center"
+              </Row>
+              <Row className="align-items-center">
+                <Col xs={8} sm={8} md={8} lg={8} xl={8}>
+                  <Row>
+                    <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+                      <p className="mb-0 p-large internal-section__tittle title-white">
+                        Some text talking about the Benifit of registering and
+                        processing the authentication for Karma Credit chech
+                      </p>
+                    </Col>
+                  </Row>
+                </Col>
+                <Col xs={4} sm={4} md={4} lg={4} xl={4} className="m-auto">
+                  <Row className="justify-content-end">
+                    <Col
+                      xs={12}
+                      sm={12}
+                      md={9}
+                      lg={9}
+                      xl={9}
+                      className="mt-24px"
+                    >
+                      <Form
+                        ref={form => (this.form = form)}
+                        onSubmit={event => {
+                          event.preventDefault();
+                          this.signIn();
+                        }}
+                        className="form__container"
                       >
-                        <Button type="submit" id="tst-login-btn" className="btn-block custom-btn">
-                         Submit
-                        </Button>
-                      </Col>
-                    </Row>
-                  </Form>
+                        <p className="p-large mb-0 internal-section__tittle pb-8px">
+                          Login
+                        </p>
+                        <FormGroup>
+                          <Input
+                            type="phone"
+                            name="phoneNumber"
+                            placeholder="phonenumber"
+                            className="form-control common-input"
+                            onChange={this.handlePhoneChange}
+                          />
+                        </FormGroup>
+                        <FormGroup>
+                          <Input
+                            type="password"
+                            name="password"
+                            placeholder="password"
+                            className="form-control common-input"
+                            onChange={this.handlePwdChange}
+                          />
+                        </FormGroup>
+                        <Row>
+                          <Col className="pt-8px pb-8px">
+                            <div class="custom-control custom-checkbox">
+                              <input
+                                type="checkbox"
+                                class="custom-control-input"
+                                id="customCheck1"
+                              />
+                              <label
+                                class="custom-control-label input-label"
+                                for="customCheck1"
+                              >
+                                <p className="p-medium mb-0px internal-section__title title-black roboto-light">
+                                  Terms and conditions
+                                </p>
+                              </label>
+                            </div>
+                          </Col>
+                        </Row>
+                        <Row className="justify-content-center">
+                          <Col
+                            xs={5}
+                            sm={5}
+                            md={4}
+                            lg={4}
+                            xl={4}
+                            className="text-center"
+                          >
+                            <Button
+                              type="submit"
+                              id="tst-login-btn"
+                              className="btn-block custom-btn"
+                            >
+                              Submit
+                            </Button>
+                          </Col>
+                        </Row>
+                      </Form>
+                    </Col>
+                  </Row>
                 </Col>
               </Row>
             </Col>
           </Row>
         </Strip>
+        <LoginBanner />
       </RenderPage>
     );
   }

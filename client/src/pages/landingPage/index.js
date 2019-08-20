@@ -24,7 +24,7 @@ class LandingPage extends Component {
             </Col>
           </Row>
         </Strip>
-        <BannerInformation />
+        {/* <BannerInformation /> */}
       </RenderPage>
     );
   }

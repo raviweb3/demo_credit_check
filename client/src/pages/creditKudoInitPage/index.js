@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Row, Col } from "reactstrap";
+import { Row, Col, Button } from "reactstrap";
 import autoBind from "react-autobind";
 import myGlobalRefs from "./../../globals";
 import RenderPage from "../../customComponents/Common/RenderPage/RenderPage";
 import Strip from "../../customComponents/Common/Strip/Strip";
+import Navigation from "../../customComponents/Common/Navigation/Navigation";
+import CardList from "../../customComponents/Common/CardList/CardList";
 
 const localStorage = require("local-storage");
 
@@ -49,28 +51,20 @@ class CreditKudosInitPage extends Component {
 
   render() {
     return (
-      <RenderPage className="render-page bg-white" containerType="container">
-        <Strip className="strip strip--short ">
-          <Row>
+      <RenderPage
+        className="render-page bg-img__container min-height-75"
+        containerType="container-fulid"
+      >
+        <Strip className="strip strip--short bg-layer min-height-75">
+          <Navigation />
+          <Row className="pt-80px pb-48px">
             <Col
-              xs={12}
-              sm={12}
-              md={12}
-              lg={12}
-              xl={12}
-              className="text-center pt-32px pb-16px"
-            >
-              <h3 className="mb-0px">Instruction</h3>
-            </Col>
-          </Row>
-          <Row className="mt-32px mb-32px">
-            <Col
-              xs={12}
-              sm={12}
-              md={12}
-              lg={12}
-              xl={12}
-              className="br-sin-yellow"
+              xs={10}
+              sm={10}
+              md={7}
+              lg={6}
+              xl={6}
+              className="br-sin-yellow bg-white m-auto"
             >
               <ul className="credit-kudo__instruction">
                 <li>
@@ -83,22 +77,43 @@ class CreditKudosInitPage extends Component {
                 <li>Dont exit in the middle</li>
               </ul>
             </Col>
-          </Row>
-          <Row className="pt-32px pb-32px">
             <Col
-              xs={12}
-              sm={12}
-              md={12}
-              lg={12}
-              xl={12}
-              className="text-center"
+              xs={10}
+              sm={10}
+              md={10}
+              lg={10}
+              xl={10}
+              className="m-auto text-center pt-30px pb-30px"
             >
               <div id="credit_kudos_container" />
             </Col>
+            <Col
+              xs={10}
+              sm={10}
+              md={10}
+              lg={10}
+              xl={10}
+              className="m-auto text-center"
+            >
+              <Link className="pull-right" to="/logout">
+                <Button className="custom-btn-sin-yellow">logout</Button>
+              </Link>
+            </Col>
           </Row>
-          <Link className="pull-right" to="/logout">
-            Logout
-          </Link>
+        </Strip>
+        <Strip className="strip strip--short">
+          <Row>
+            <Col
+              xs={11}
+              sm={11}
+              md={11}
+              lg={11}
+              xl={11}
+              className="m-auto pt-30px pb-30px"
+            >
+              <CardList />
+            </Col>
+          </Row>
         </Strip>
       </RenderPage>
     );
