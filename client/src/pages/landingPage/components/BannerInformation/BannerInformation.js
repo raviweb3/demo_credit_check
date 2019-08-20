@@ -22,7 +22,7 @@ class BannerInformation extends Component {
             xl={{ offset: 1, size: 6 }}
            
           >
-             <img src={require('../../../../image/charts.jpg')} className=""/>
+             {/* <img src={require('../../../../image/charts.jpg')} className=""/> */}
           </Col>
         </Row>
         <Row className="pb-32px pt-16px">

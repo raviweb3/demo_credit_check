@@ -30,7 +30,7 @@
 }
 //font size overrides
 .p-large {
-  font-size: $fs-18px !important;
+  font-size: $fs-19px !important;
   line-height: calc(1.125rem * 1.2) !important;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .h5-medium {
-  font-size: $fs-26px !important;
+  font-size: $fs-27px !important;
   line-height: calc(1.6rem * 1.14) !important;
 }
 .h6-medium {
@@ -184,7 +184,9 @@
 }
 
 .form__container {
-  @include setPadding($fs-32px, $fs-32px, $fs-32px, $fs-32px);
+  @include setPadding($fs-16px, $fs-16px, $fs-16px, $fs-16px);
+  border-radius: $fs-12px;
+  background-color: $white;
 }
 
 .common-border{

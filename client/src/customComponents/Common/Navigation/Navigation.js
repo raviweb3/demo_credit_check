@@ -1,54 +1,38 @@
 import React, { Component } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Image
-} from "reactstrap";
-import {logo}  from '../../../image/logo.png'
+import { Col, Row } from "reactstrap";
+import { Link } from "react-router-dom";
+
 class Navigation extends Component {
   constructor(props) {
     super(props);
-
-    this.toggleNavbar = this.toggleNavbar.bind(this);
-    this.state = {
-      collapsed: true
-    };
-  }
-
-  toggleNavbar() {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
   }
   render() {
     return (
-        <Navbar color="faded" light expand="md" className="custom-navbar">
-          <NavbarBrand href="/" className="mr-auto width-20">
-          <div className="text-center">
-             <img src={require('../../../image/logo.png')} className="logo-container"/>
-             <h5 className="mb-0px page__title title-black">Demo</h5>
-            </div>
-          </NavbarBrand>
-
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-          <Collapse isOpen={!this.state.collapsed} navbar>
-          <Nav navbar className="custom-navbar-nav">
-            <NavItem>
-              <h3 className="mb-0px page__title title-black openSan-bold">Demo Credit Check</h3>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/login" className="text-decoration">
-                <h5 className="mb-0px title-butter-scotch page__title">Login</h5>
-              </NavLink>
-            </NavItem>
-          </Nav>
-          </Collapse>
-        </Navbar>
+      <Row className="br-bottom">
+        <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+          <Row>
+            <Col
+              xs={8}
+              sm={8}
+              md={8}
+              lg={10}
+              xl={10}
+              className="d-flex pt-8px pb-8px m-auto"
+            >
+              <div className="header-logo">
+                <Link to="/">
+                  <img src={require("../../../image/header-logo.png")} />
+                </Link>
+              </div>
+              <div className="pl-48px">
+                <h3 className="mb-0 h3-large landing-page__tittle pt-16px pb-16px text-left">
+                  KARMA
+                </h3>
+              </div>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     );
   }
 }

@@ -5,11 +5,11 @@ import CardListData from "./CardListData";
 class CardList extends Component {
   render() {
     return (
-      <Row>
+      <Row className="align-items-center">
         {CardListData
           ? CardListData.map(data => (
-              <Col xs={4} sm={4} md={4} lg={4} xl={4} className="pl-8px pr-8px pt-8px pr-8px">
-                <img src={`${data.img}`} className="" />
+              <Col className="pl-12px pr-12px pt-8px pb-8px d-flex align-items-center justify-content-center">
+                <img src={`${data.img}`} className={data.className} />
               </Col>
             ))
           : null}
