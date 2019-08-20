@@ -14,6 +14,7 @@ class LoginPage extends Component {
   }
 
   signIn() {
+    debugger;
     localStorage.set("jwt-login-token", "dummyToken");
     localStorage.set("userId", "ravi-kiran-123456784");
     this.props.history.push("/credit-summary");

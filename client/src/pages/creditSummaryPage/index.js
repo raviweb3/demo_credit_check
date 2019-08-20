@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Row, Col } from "reactstrap";
+import { withRouter } from 'react-router-dom';
 import UserProfileData from "../../containers/UserProfileData";
 import UserProfile from "./components/UserProfile";
 import RenderPage from "../../customComponents/Common/RenderPage/RenderPage";
@@ -70,4 +71,4 @@ CreditSummaryPage.propTypes = {
   history: PropTypes.object.isRequired
 };
 
-export default CreditSummaryPage;
+export default withRouter(CreditSummaryPage);

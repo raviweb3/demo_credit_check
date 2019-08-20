@@ -33,6 +33,26 @@
   src: url("../fonts/Avenir-Medium.ttf");
 }
 
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
 $openSan-bold:OpenSans-Bold;
 $openSan-light:OpenSans-Light;
 $openSan-regular:OpenSans-Regular;
@@ -40,6 +60,10 @@ $avenir-book: Avenir-Book;
 $avenir-heavy: Avenir-Heavy;
 $avenir-light: Avenir-Light;
 $avenir-medium: Avenir-Medium;
+$roboto-medium: Roboto-Medium;
+$roboto-light: Roboto-Light;
+$montserrat-semiBold: Montserrat-SemiBold;
+$montserrat-bold: Montserrat-Bold;
 
 // Based on requirements, clean up the sizes that are not necessary.
 $fs-1px: 0.06rem; //	1px
