@@ -82,7 +82,7 @@ class LoginPage extends Component {
                           <Input
                             type="phone"
                             name="phoneNumber"
-                            placeholder="phoneNumber"
+                            placeholder="phonenumber"
                             className="form-control common-input"
                             onChange={this.handlePhoneChange}
                           />
