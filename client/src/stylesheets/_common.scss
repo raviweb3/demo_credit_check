@@ -143,10 +143,17 @@ img {
     top: 0.15rem !important;
     border-radius: 0 !important;
     border-color: $sin-yellow;
+    width: $fs-14px !important;
+    height: $fs-14px !important;
+    height: $fs-14px !important;
+    left: -1.15rem !important;
   }
   &::after {
     top: 0.15rem !important;
     border-color: $sin-yellow;
+    width: $fs-14px !important;
+    height: $fs-14px !important;
+    left: -1.15rem !important;
   }
 }
 
