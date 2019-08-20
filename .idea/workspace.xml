@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb7d9bc2-cd71-4ead-9243-265c14d5d39e" name="Default Changelist" comment="bringing changes from sai">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="eb7d9bc2-cd71-4ead-9243-265c14d5d39e" name="Default Changelist" comment="bringing changes from sai" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -168,7 +166,7 @@
       <updated>1565327931670</updated>
       <workItem from="1565327932901" duration="23499000" />
       <workItem from="1565666356505" duration="1614000" />
-      <workItem from="1565673094329" duration="741000" />
+      <workItem from="1565673094329" duration="1257000" />
     </task>
     <task id="LOCAL-00001" summary="bringing changes from sai">
       <created>1565348830994</created>
@@ -188,7 +186,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25854000" />
+    <option name="totallyTimeSpent" value="26370000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
