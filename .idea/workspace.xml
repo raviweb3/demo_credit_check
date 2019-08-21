@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb7d9bc2-cd71-4ead-9243-265c14d5d39e" name="Default Changelist" comment="" />
+    <list default="true" id="eb7d9bc2-cd71-4ead-9243-265c14d5d39e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -63,20 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="112">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="105">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -136,7 +139,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/client/src/App.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/client/public/index.html" />
         <option value="$PROJECT_DIR$/client/src/containers/LoginMutation/index.js" />
         <option value="$PROJECT_DIR$/client/package.json" />
@@ -157,6 +159,7 @@
         <option value="$PROJECT_DIR$/client/src/pages/creditSummaryPage/components/UserProfile/index.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/client/src/pages/loginPage/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -310,7 +313,7 @@
       <workItem from="1565673094329" duration="1257000" />
       <workItem from="1566299760088" duration="1046000" />
       <workItem from="1566341838317" duration="652000" />
-      <workItem from="1566356464129" duration="4704000" />
+      <workItem from="1566356464129" duration="4939000" />
     </task>
     <task id="LOCAL-00001" summary="bringing changes from sai">
       <created>1565348830994</created>
@@ -337,7 +340,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32772000" />
+    <option name="totallyTimeSpent" value="33007000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,6 +353,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23853712" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -362,9 +366,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291536" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.3291536" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.8029476" visible="true" weight="0.58411705" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49563318" weight="0.20794149" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1970524" side_tool="true" visible="true" weight="0.58411705" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.8024017" weight="0.58411705" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4945415" visible="true" weight="0.4336468" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50545853" side_tool="true" visible="true" weight="0.4336468" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -646,13 +650,6 @@
     <entry file="file://$PROJECT_DIR$/client/yarn.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/pages/creditSummaryPage/components/UserProfile/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -675,8 +672,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="112">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>
