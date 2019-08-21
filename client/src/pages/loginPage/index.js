@@ -47,8 +47,8 @@ class LoginPage extends Component {
                   xs={8}
                   sm={8}
                   md={6}
-                  lg={4}
-                  xl={4}
+                  lg={6}
+                  xl={6}
                   className="pt-16px pb-16px"
                 >
                   <p className="mb-0 p-large landing-page__description montserrat-bold ls-normal text-left">
