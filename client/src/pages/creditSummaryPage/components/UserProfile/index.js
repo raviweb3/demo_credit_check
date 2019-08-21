@@ -12,6 +12,7 @@ class UserProfile extends Component {
 
     this.state = {
       userId: localStorage.get("userId"),
+      phoneNumber: localStorage.get("phoneNumber"),
       ...props.userProfile
     };
   }
@@ -175,7 +176,7 @@ class UserProfile extends Component {
                     className="pt-6px pb-6px"
                   >
                     <p className="p-large internal-section__title title-black text-left roboto-light">
-                      {phone}
+                      {this.state.phoneNumber}
                     </p>
                   </Col>
                 </Row>

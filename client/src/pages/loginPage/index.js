@@ -12,11 +12,22 @@ class LoginPage extends Component {
   constructor(props) {
     super(props);
     autoBind(this);
+    this.state = {
+      phoneNumber: "",
+      password: ""
+    };
+    this.handleInputChange = this.handleInputChange.bind(this);
   }
-
+  handleInputChange(event) {
+    event.preventDefault();
+    this.setState({
+      [event.target.name]: [event.target.value]
+    });
+  }
   signIn() {
     localStorage.set("jwt-login-token", "dummyToken");
     localStorage.set("userId", "ravi-kiran-123456784");
+    localStorage.set("phoneNumber", this.state.phoneNumber);
     this.props.history.push("/credit-summary");
   }
 
@@ -36,8 +47,8 @@ class LoginPage extends Component {
                   xs={8}
                   sm={8}
                   md={6}
-                  lg={4}
-                  xl={4}
+                  lg={6}
+                  xl={6}
                   className="pt-16px pb-16px"
                 >
                   <p className="mb-0 p-large landing-page__description montserrat-bold ls-normal text-left">
@@ -84,7 +95,7 @@ class LoginPage extends Component {
                             name="phoneNumber"
                             placeholder="phonenumber"
                             className="form-control common-input"
-                            onChange={this.handlePhoneChange}
+                            onChange={this.handleInputChange}
                           />
                         </FormGroup>
                         <FormGroup>
@@ -93,7 +104,7 @@ class LoginPage extends Component {
                             name="password"
                             placeholder="password"
                             className="form-control common-input"
-                            onChange={this.handlePwdChange}
+                            onChange={this.handleInputChange}
                           />
                         </FormGroup>
                         <Row>
