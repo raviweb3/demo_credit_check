@@ -44,9 +44,9 @@ redirectRoute.route('/redirect').get(function(req, res) {
     res.write('<div style="background-color: #fff">'+
         '<h6 style="color: #5fc35f; font-size: 2rem !important; text-align: center;padding: 1rem 0;">success</h6>'+
         '<div style="padding: 1rem">'+
-        '<p style="color: #d9d9d9; margin-bottom: 0;padding: 0.5rem 0; font-size: 1.125rem !important; text-align: right">Name : RaviKiran</p>'+
-        '<p style="color: #d9d9d9; margin-bottom: 0;padding: 0.5rem 0; font-size: 1.125rem !important; text-align: right">code :'+ code +'</p>'+
-        '<p style="color: #d9d9d9; margin-bottom: 0;padding: 0.5rem 0; font-size: 1.125rem !important; text-align: right">State:'+ state + '</p>'+
+        '<p style="color: #414658; margin-bottom: 0;padding: 0.5rem 0; font-size: 1.125rem !important; text-align: left">Name : RaviKiran</p>'+
+        '<p style="color: #414658; margin-bottom: 0;padding: 0.5rem 0; font-size: 1.125rem !important; text-align: left">code :'+ code +'</p>'+
+        '<p style="color: #414658; margin-bottom: 0;padding: 0.5rem 0; font-size: 1.125rem !important; text-align: left">State:'+ state + '</p>'+
         '</div>'+
         '</div>')
     res.end();
