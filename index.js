@@ -54,12 +54,12 @@ debugger;
             '<tr><td>'+
             '<p style="color: #d9d9d9; margin-bottom: 0;padding: 0.5rem 0; font-size: 1.125rem !important; text-align: right">Code:</p>'+
             +'</td><td>'+
-            '<p style="color:#000; padding-left: 0.75rem; margin-bottom: 0; font-size: 1.125rem !important">'+Code+'</p>'
+            '<p style="color:#000; padding-left: 0.75rem; margin-bottom: 0; font-size: 1.125rem !important">'+code+'</p>'
             +'</td></tr>'+
             '<tr><td>'+
             '<p style="color: #d9d9d9; margin-bottom: 0;padding: 0.5rem 0; font-size: 1.125rem !important; text-align: right">State:</p>'+
             +'</td><td>'+
-            '<p style="color:#000; padding-left: 0.75rem; margin-bottom: 0; font-size: 1.125rem !important">'+State+'</p>'
+            '<p style="color:#000; padding-left: 0.75rem; margin-bottom: 0; font-size: 1.125rem !important">'+state+'</p>'
             +'</td></tr>'+
         +'</table>'+
       +'</div>'+  
