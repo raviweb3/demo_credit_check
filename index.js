@@ -40,31 +40,7 @@ redirectRoute.route('/redirect').get(function(req, res) {
     let code = req.query.code;
     let state = req.query.state;
 
-    // res.json({result:"SUCCESS", name: "RaviKiran" , code: code, state: state });
-    //res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write('<div style="background-color: #fff">'+
-        '<h6 style="color: #5fc35f; font-size: 2rem !important; text-align: center;padding: 1rem 0;">success</h6>'+
-        '<div style="padding: 1rem">'+
-        '<table>'+
-        '<tr><td>'+
-        '<p style="color: #d9d9d9; margin-bottom: 0;padding: 0.5rem 0; font-size: 1.125rem !important; text-align: right">Name:</p>'+
-        +'</td><td>'+
-        '<p style="color:#000; padding-left: 0.75rem; margin-bottom: 0; font-size: 1.125rem !important">RaviKiran</p>'
-        +'</td></tr>'+
-        '<tr><td>'+
-        '<p style="color: #d9d9d9; margin-bottom: 0;padding: 0.5rem 0; font-size: 1.125rem !important; text-align: right">Code:</p>'+
-        +'</td><td>'+
-        '<p style="color:#000; padding-left: 0.75rem; margin-bottom: 0; font-size: 1.125rem !important">'+code+'</p>'
-        +'</td></tr>'+
-        '<tr><td>'+
-        '<p style="color: #d9d9d9; margin-bottom: 0;padding: 0.5rem 0; font-size: 1.125rem !important; text-align: right">State:</p>'+
-        +'</td><td>'+
-        '<p style="color:#000; padding-left: 0.75rem; margin-bottom: 0; font-size: 1.125rem !important">'+state+'</p>'
-        +'</td></tr>'+
-        +'</table>'+
-        +'</div>'+
-        +'</div>')
-    res.end();
+    res.json({result:"SUCCESS", name: "RaviKiran" , code: code, state: state });
     /*res.header( 'Content-Type', "application/json" );
     res.header( 'Authorization', "Bearer " + code );
     res.redirect(307, 'https://api.creditkudos.com/v3/reports/1/summary_pdf_requests');*/
