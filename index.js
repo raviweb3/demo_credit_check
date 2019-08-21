@@ -40,9 +40,7 @@ redirectRoute.route('/redirect').get(function(req, res) {
     let code = req.query.code;
     let state = req.query.state;
 
-    //res.json({result:"SUCCESS", name: "RaviKiran" , code: code, state: state });
-
-    // resp.writeHead(200, { 'Content-Type': 'text/html' });
+    res.header('Content-Type', 'text/html');
     res.write('<div style="background-color: #fff">'+
         '<h6 style="color: #5fc35f; font-size: 2rem !important; text-align: center;padding: 1rem 0;">success</h6>'+
         '<div style="padding: 1rem">'+
@@ -66,9 +64,6 @@ redirectRoute.route('/redirect').get(function(req, res) {
         +'</div>'+
         +'</div>')
     res.end();
-    /*res.header( 'Content-Type', "application/json" );
-    res.header( 'Authorization', "Bearer " + code );
-    res.redirect(307, 'https://api.creditkudos.com/v3/reports/1/summary_pdf_requests');*/
 });
 
 app.use('/routes', serverRoutes);

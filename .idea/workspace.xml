@@ -63,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="52" column="119" lean-forward="true" selection-start-line="52" selection-start-column="119" selection-end-line="52" selection-end-column="119" />
+            <state relative-caret-position="433">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h6#0;n#div#0;n#!!top" expanded="true" />
@@ -327,7 +327,7 @@
       <workItem from="1565673094329" duration="1257000" />
       <workItem from="1566299760088" duration="1046000" />
       <workItem from="1566341838317" duration="652000" />
-      <workItem from="1566356464129" duration="5512000" />
+      <workItem from="1566356464129" duration="5743000" />
     </task>
     <task id="LOCAL-00001" summary="bringing changes from sai">
       <created>1565348830994</created>
@@ -354,7 +354,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33580000" />
+    <option name="totallyTimeSpent" value="33811000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -380,9 +380,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291536" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.3291536" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.80131006" visible="true" weight="0.58411705" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49399564" weight="0.37722048" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.19868995" side_tool="true" visible="true" weight="0.58411705" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.80131006" weight="0.58411705" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49344978" visible="true" weight="0.37722048" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5065502" side_tool="true" visible="true" weight="0.37722048" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -693,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="52" column="119" lean-forward="true" selection-start-line="52" selection-start-column="119" selection-end-line="52" selection-end-column="119" />
+        <state relative-caret-position="433">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h6#0;n#div#0;n#!!top" expanded="true" />
