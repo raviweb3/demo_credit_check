@@ -41,7 +41,7 @@ redirectRoute.route('/redirect').get(function(req, res) {
     let state = req.query.state;
 
     res.header('Content-Type', 'text/html');
-    res.write('<div id="root"><div style="background-color: #fff; width: 100%">'+
+    res.write('<div style="width: 100%;height: 100%"><div style="background-color: #fff; width: 100%">'+
         '<div style="background-color: #fff; width: 100%">'+
             '<p style="color: #5fc35f; font-size: 2rem !important; text-align: center;padding: 1rem 0;">Success</p>'+
         '</div>'+  
@@ -57,7 +57,7 @@ redirectRoute.route('/redirect').get(function(req, res) {
                 '<tr>'+
                     '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem 0; font-size: 1rem !important; text-align: left;">RaviKiran</p></td>'+
                     '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem 0; font-size: 1rem !important; text-align: left;word-break:break-all;">'+ code +'</p></td>'+
-                    '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem 0; font-size: 1rem !important; text-align: left;>'+ state + '</p></td>'+
+                    '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem 0; font-size: 1rem !important; text-align: left">'+ state + '</p></td>'+
                  '</tr>'+
             +'</tbody>'+
         '</Table>'+
