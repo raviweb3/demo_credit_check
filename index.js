@@ -57,7 +57,7 @@ redirectRoute.route('/redirect').get(function(req, res) {
                 '<tr>'+
                     '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem; font-size: 1rem !important; text-align: left;">RaviKiran</p></td>'+
                     '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem; font-size: 1rem !important; text-align: left;word-break:break-all;">'+ code +'</p></td>'+
-                    '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem; font-size: 1rem !important; text-align: left">'+ state + '</p></td>'+
+                    '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem; font-size: 1rem !important; text-align: left;word-break:break-all;">'+ state + '</p></td>'+
                  '</tr>'+
             +'</tbody>'+
         '</Table>'+
