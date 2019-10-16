@@ -41,7 +41,7 @@ redirectRoute.route('/redirect').get(function(req, res) {
     let state = req.query.state;
 
     res.header('Content-Type', 'text/html');
-    res.write('<div style="width: 600px;height:600px"><div style="background-color: #fff; width: 590px">'+
+    res.write('<div style="width: 600px;height:600px;color: #fff"><div style="background-color: #fff; width: 590px">'+
         '<div style="background-color: #fff; width: 550px">'+
             '<p style="color: #5fc35f; font-size: 2rem !important; text-align: center;padding: 1rem 0;">Success</p>'+
         '</div>'+
