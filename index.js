@@ -41,23 +41,23 @@ redirectRoute.route('/redirect').get(function(req, res) {
     let state = req.query.state;
 
     res.header('Content-Type', 'text/html');
-    res.write('<div id="root"><div style="background-color: #fff; width: 100%">'+
+    res.write('<div style="width: 100%;height: 100%"><div style="background-color: #fff; width: 100%">'+
         '<div style="background-color: #fff; width: 100%">'+
             '<p style="color: #5fc35f; font-size: 2rem !important; text-align: center;padding: 1rem 0;">Success</p>'+
         '</div>'+  
         '<Table style="width: 100%; border: 1px solid #ddd">'+
           '<thead>'+
-             '<tr>'+
-                '<th style="width:200px;color: #414658; font-size: 1rem !important">Name</th>'+
-                '<th color: #414658;font-size: 1rem !important">Code</th>'+
-                '<th style="width:200px;color: #414658;font-size: 1rem !important">State</th>'+
+             '<tr style="background-color: #f8c142;">'+
+                '<th style="width:200px;color: #fff; font-size: 1rem !important; padding: 0.5rem; text-align: left; border: 1px solid #ddd">Name</th>'+
+                '<th style="color: #fff;font-size: 1rem !important; padding: 0.5rem; text-align: left; border: 1px solid #ddd">Code</th>'+
+                '<th style="width:200px;color: #fff;font-size: 1rem !important; padding: 0.5rem; text-align: left; border: 1px solid #ddd">State</th>'+
             '</tr>'+
             '</thead>'+
             '<tbody>'+
                 '<tr>'+
-                    '<td><p style="color: #414658; margin-bottom: 0;padding: 0.5rem 0; font-size: 1rem !important; text-align: left">RaviKiran</p></td>'+
-                    '<td><p style="color: #414658; margin-bottom: 0;padding: 0.5rem 0; font-size: 1rem !important; text-align: left;word-break:break-all">'+ code +'</p></td>'+
-                    '<td><p style="color: #414658; margin-bottom: 0;padding: 0.5rem 0; font-size: 1rem !important; text-align: left">'+ state + '</p></td>'+
+                    '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem; font-size: 1rem !important; text-align: left;">RaviKiran</p></td>'+
+                    '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem; font-size: 1rem !important; text-align: left;word-break:break-all;">'+ code +'</p></td>'+
+                    '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem; font-size: 1rem !important; text-align: left;word-break:break-all;">'+ state + '</p></td>'+
                  '</tr>'+
             +'</tbody>'+
         '</Table>'+
