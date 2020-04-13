@@ -41,27 +41,27 @@ redirectRoute.route('/redirect').get(function(req, res) {
     let state = req.query.state;
 
     res.header('Content-Type', 'text/html');
-    res.write('<div style="width: 600px;height:600px;color: #fff"><div style="background-color: #fff; width: 590px">'+
+    res.write(
+        '<html>' +
+        '<head>' +
+        '<script src="https://code.creditkudos.com/creditkudos-connect-v2.latest.js"></script>' +
+        '<script type="text/javascript">' +
+        'var readyStateCheckInterval = setInterval(function() {' +
+        'if (document.readyState === "complete") {' +
+        'clearInterval(readyStateCheckInterval);' +
+        'CK.notify();' +
+        '}' +
+        '}, 1);' +
+        '</script>' +
+        '</head>' +
+        '<body>' +
+        '<div style="width: 600px;height:600px;color: #fff"><div style="background-color: #fff; width: 590px">'+
         '<div style="background-color: #fff; width: 550px">'+
-            '<p style="color: #5fc35f; font-size: 2rem !important; text-align: center;padding: 1rem 0;">Success</p>'+
-        '</div>'+
-        '<Table style="width: 525px; border: 1px solid #ddd">'+
-          '<thead>'+
-             '<tr style="background-color: #f8c142;">'+
-                '<th style="width:200px;color: #fff; font-size: 1rem !important; padding: 0.5rem; text-align: left; border: 1px solid #ddd">Name</th>'+
-                '<th style="color: #fff;font-size: 1rem !important; padding: 0.5rem; text-align: left; border: 1px solid #ddd">Code</th>'+
-                '<th style="width:150px;color: #fff;font-size: 1rem !important; padding: 0.5rem; text-align: left; border: 1px solid #ddd">State</th>'+
-            '</tr>'+
-            '</thead>'+
-            '<tbody>'+
-                '<tr>'+
-                    '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem; font-size: 1rem !important; text-align: left;">RaviKiran</p></td>'+
-                    '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem; font-size: 1rem !important; text-align: left;word-break:break-all;">'+ code +'</p></td>'+
-                    '<td style="border: 1px solid #ddd"><p style="color: #414658; margin-bottom: 0;padding: 0.5rem; font-size: 1rem !important; text-align: left;word-break:break-all;">'+ state + '</p></td>'+
-                 '</tr>'+
-            +'</tbody>'+
-        '</Table>'+
-    +'</div></div>');
+        '<p style="color: #5fc35f; font-size: 2rem !important; text-align: center;padding: 1rem 0;">Redirecting you back to the app...</p>'+
+        '</div></div></div>'+
+        '</body>' +
+        '</html>'
+    );
     res.end();
 });
 
